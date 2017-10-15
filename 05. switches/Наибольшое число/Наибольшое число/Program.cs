@@ -25,9 +25,12 @@ namespace ConsoleApplication1
                 {
                     Console.WriteLine("Самое большое число:" + b);
                 }
-                if (c >= b)
+                else
                 {
-                    Console.WriteLine("Самое большое число:" + c);
+                    if (c >= b)
+                    {
+                        Console.WriteLine("Самое большое число:" + c);
+                    }
                 }
                     
             }
