@@ -3,27 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
-namespace Magnitude {
-class Program {
-static void Main(string[] args) {
-int num;
-Console.WriteLine("Введите число:");
-num = int.Parse(Console.ReadLine());
-Console.WriteLine("Число: " + num);
+namespace Magnitude 
+{
 
-Console.WriteLine("Длина числа: " + GetMagnitude(num));
-Console.Read();
-}
+    class Program 
+    {
 
-static int GetMagnitude(int number) {
-int mag = 0;
-while (number > 0) {
-mag++;
-number = number / 10;
-}
+        static void Main(string[] args) 
+        {
+            int num;
+            Console.WriteLine("Введите число:");
+            num = int.Parse(Console.ReadLine());
+            Console.WriteLine("Число: " + num);
+            Console.WriteLine("Длина числа: " + GetMagnitude(num));
+            Console.Read();
 
-return mag;
-}
-}
+        }
+
+        static int GetMagnitude(int number) 
+        {
+
+            int mag = 0;
+            while (number > 0)
+            {
+
+                mag++;
+                number = number / 10;
+
+            }
+
+            return mag;
+
+        }
+
+    }
 }
