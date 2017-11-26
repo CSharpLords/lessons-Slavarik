@@ -9,20 +9,17 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            while (true)
+            int sum = 0;
+            int SumN = 0;
+            while (SumN < 4)
             {
-                Console.WriteLine("Введите первое число");
+                Console.WriteLine("Введите число");
                 int number = int.Parse(Console.ReadLine());
-                Console.WriteLine("Введите первое число");
-                int number2 = int.Parse(Console.ReadLine());
-                Console.WriteLine("Введите первое число");
-                int number3 = int.Parse(Console.ReadLine());
-                Console.WriteLine("Введите первое число");
-                int number4 = int.Parse(Console.ReadLine());
-                int sum = number + number2 + number3 + number4;
-                Console.WriteLine("Сумма чисел ровна:" + sum);
-                Console.WriteLine();
+                sum = number + sum;
+                SumN = SumN + 1;
             }
+            Console.WriteLine("Сумма чисел ровна:" + sum);
+            Console.ReadLine();
         }
     }
 }
