@@ -10,14 +10,11 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            int account = 1;
             int b = 7;
-            for (int a = 1; a < 11; a = a + 1)
-            {
-                
-                int c = a * b;
-                Console.WriteLine(account + ".Умножение:" + c);
-                account = account + 1;
+            for (int account = 1; account < 11; account = account + 1)
+            {                
+                int c = account * b;
+                Console.WriteLine("Умножение: " + account  + " * " + b  + " = " + c);
             }
             Console.ReadLine();
         }
