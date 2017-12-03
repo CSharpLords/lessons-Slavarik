@@ -23,17 +23,15 @@ namespace LoopyLandscape {
 			graphics.FillEllipse(Brushes.Yellow, 310, 20, 70, 70);
 
 			// рисуем дерево и траву
-			DrawGrass(0, 270);
-			DrawTree(0, 200);
-            DrawGrass(100, 270);
-            DrawTree(100, 200);
-            DrawGrass(200, 270);
-            DrawTree(200, 200);
-            DrawGrass(300, 270);
-            DrawTree(300, 200);
+            for (int size = 0; size < 400; size = size + 100)
+            {
+                DrawGrass(size, 270);
+                DrawTree(size, 200);
+            }
 		}
 
-		private void DrawGrass(int x, int y) {
+        private void DrawGrass(int x, int y)
+        {
 			Image img = Image.FromFile("GrassBlock.png");
 			graphics.DrawImage(img, x, y);
 		}
