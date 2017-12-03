@@ -25,6 +25,12 @@ namespace LoopyLandscape {
 			// рисуем дерево и траву
 			DrawGrass(0, 270);
 			DrawTree(0, 200);
+            DrawGrass(100, 270);
+            DrawTree(100, 200);
+            DrawGrass(200, 270);
+            DrawTree(200, 200);
+            DrawGrass(300, 270);
+            DrawTree(300, 200);
 		}
 
 		private void DrawGrass(int x, int y) {
