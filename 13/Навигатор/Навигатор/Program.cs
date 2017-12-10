@@ -32,7 +32,7 @@ namespace ConsoleApplication1
             else if (answer == "телефон") {
                 Console.WriteLine("на стуле.");
             }
-            else if (answer == "записка с паролем от Dota2")
+            else if (answer == "записка с паролем от dota2")
             {
                 Console.WriteLine("на столе.");
             }
