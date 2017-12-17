@@ -15,7 +15,7 @@ namespace CarLine {
 		private Image img;
 
 		private int carX = 200;
-		private int speed = 2;
+		private int speed = 3;
 		public Form1() {
 			InitializeComponent();
 
@@ -29,7 +29,10 @@ namespace CarLine {
 			graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
 			graphics.Clear(Color.FromArgb(0x44444400));
-			DrawCar(carX, 200);
+            for (int a = 0; a < 175; a = a + 35)
+            {
+                DrawCar(carX + a, 200);
+            }
 		}
 
 		private void DrawCar(int x, int y) {
