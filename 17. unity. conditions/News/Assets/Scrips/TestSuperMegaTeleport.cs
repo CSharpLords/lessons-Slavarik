@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TestSuperMegaTeleport : MonoBehaviour {
-
-	// Use this for initialization
+	public Transform enemy;
 	void Start () {		
-		float x = 0;
-		float z = 0;
-		transform.position = Vector3.down;
 	}
-	
-	// Update is called once per frame
 	void Update () {
-
+		float dist = Vector3.Distance(enemy.position, transform.position);
+		if (dist <= 3) {
+			print ("U WIN");
+		}
 	}
 }
