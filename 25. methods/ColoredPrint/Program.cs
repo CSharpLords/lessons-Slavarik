@@ -4,14 +4,20 @@ namespace ColoredPrint {
 	class Program {
 		static void Main(string[] args) {
 			// вызов метода PrintColoredText c разными аргументами
-			PrintColoredText("This text should be red", ConsoleColor.Red);
-			PrintColoredText("This text should be yellow", ConsoleColor.Yellow);
+			PrintColoredText("70% даунов с читами", ConsoleColor.Red);
+			PrintColoredText("5% норм пасанов", ConsoleColor.Yellow);
+            PrintColoredText("5% жирные ублюдки (Valve CSGO)", ConsoleColor.DarkMagenta);
+            PrintColoredText("5% школьники", ConsoleColor.DarkYellow);
+            PrintColoredText("15% Поляки", ConsoleColor.DarkRed);
 
 			Console.ReadLine();
 		}
 
 		static void PrintColoredText(string text, ConsoleColor color) {
-			// пиши код здесь
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.BackgroundColor = color;
+            Console.WriteLine(text);
+
 		}
-	}
+    }
 }
