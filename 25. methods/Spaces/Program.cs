@@ -10,5 +10,18 @@ namespace Spaces {
 			Console.Write("Предложение '" + sentence + "' содержит " + spacesAmount + " пробелов");
 			Console.ReadLine();
 		}
+        static int CountSpaces(string sentence)
+        {
+            int spacesAmount = 0;
+            for (int x = 0; x < sentence.Length; x ++)
+            {
+                char space = ' ';
+                if (sentence[x] == space)
+                {
+                    spacesAmount++;
+                }
+            }
+            return spacesAmount;
+        }
 	}
 }
